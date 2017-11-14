@@ -1338,6 +1338,7 @@ table.integrations {
       left: 2px;
       font-size: 15px !important;
       color: @gray;
+      top: 1px;
     }
   }
 
@@ -1838,7 +1839,6 @@ ul.faces {
   }
 
   .icon-arrow-down {
-    top: 3px;
     right: -2px;
   }
 
@@ -2551,7 +2551,8 @@ header + .alert {
     .transition(none);
     color: @gray-dark;
 
-    &:hover {
+    &:hover,
+    &.active {
       background: #f7f8f9;
       color: darken(@gray-dark, 10);
     }
@@ -2598,6 +2599,9 @@ header + .alert {
 
 .dropdown-actor-title {
   display: flex;
+  align-items: center;
+  height: 100%;
+  min-height: 18px;
 }
 
 /**
